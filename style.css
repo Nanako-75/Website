@@ -105,7 +105,7 @@
     background-position: center;
 }
 
-h2 {
+.h2 {
     font-family: Arial, sans-serif;
 }
 
@@ -124,7 +124,7 @@ h2 {
     text-align: center;
 }
 
-p {
+.p {
     font-size: 18px;
 }
 
@@ -177,7 +177,7 @@ p {
     text-align: left;
 }
 
-footer {
+.footer {
     position: fixed;
     left: 0;
     bottom: 0;
