@@ -1,8 +1,6 @@
 .navbar{
-    background-color: #75bc91;
-    border-radius: 20px;
-    width: 95%;
-    margin: 30px; /* Moves navbar further down */
+    background-color: white;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -17,7 +15,7 @@
 
 .navbar a {
     display: block;
-    color: white;
+    color: #55cd87;
     text-align: center;
     padding: 15px 25px;
     font-size:30px;
@@ -26,18 +24,18 @@
 }
 
 .navbar a:hover {
-    background-color: white;
-    color: #75bc91;
+    background-color: #87cea5;
+    color: white;
 }
 
-.body {
+.body-home {
     font-family: Arial, sans-serif;
     background-image: url('img/energy-background.jpg');
     background-attachment: fixed;
 }
 
 .header-title {
-    font-size: 36px;
+    font-size: 40px;
     color: black;
     text-align: center;
     padding: 20px;
@@ -51,17 +49,6 @@
     padding: 10px;
     font-weight: bold;
     font-family: Arial, sans-serif;
-}
-
-footer {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: black;
-    text-align: center;
-    padding: 10px 0;
-    border-radius: 20px 20px 0 0;
-    z-index: 100;
 }
 
 .half-section {
@@ -109,4 +96,138 @@ footer {
 .explore-link a:hover {
     background: #75bc91;
     color: white;
+}
+
+.services-bg {
+    background-color: rgba(135, 206, 165, 0.6); /* 0.6 opacity for a faded effect */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h2 {
+    font-family: Arial, sans-serif;
+}
+
+.contact-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px; /* Adjust as needed */
+}
+
+.contact-form {
+    background: rgba(117, 188, 145, 0.1);
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+}
+
+.values-section {
+    max-width: 2000px;
+    margin: 80px auto 60px auto; /* 80px top, 60px bottom */
+    padding: 40px 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 24px;
+    background-color: #a5e1a7;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+    text-align: center;
+    color: #222;
+    position: relative; /* Not absolute or fixed */
+    z-index: 1;
+}
+
+.values-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.values-image {
+    width: 200px;      /* Adjust size as needed */
+    height: 300px;
+    margin-right: 30px;
+    border-radius: 10%; /* Optional: make image round */
+    object-fit: cover;
+}
+
+.values-section h2 {
+    font-family: Arial, sans-serif;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.values-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.values-section li {
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    margin: 5px 0;
+    text-align: left;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+    padding: 1px 0;
+    border-radius: 20px 20px 0 0;
+    background: rgba(117, 188, 145, 0.8);
+    z-index: 100;
+}
+
+.footer-text {
+    font-size: 16px;
+    color: black;
+}
+
+.services-section {
+    background: #fff;
+    border-radius: 18px;
+    margin: 40px auto;
+    max-width: 900px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 30px 40px; /* Increased left and right padding */
+}
+
+.services-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.services-text {
+    flex: 2;
+    padding-right: 30px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+.services-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.round-img-services {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
 }
