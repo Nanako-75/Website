@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <title>EcoFuture Solutions</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <header class="header">   
@@ -16,32 +17,58 @@
             <li><a href="contact.html">Contact us</a></li>
         </ul>
     </nav>
+    <h1 class="header-title">Contact Us</h1>
 </header>
 
-<body> 
-    <section>
-      <h1 class="header-title">Contact Details</h1>
-      <p><strong>Phone:</strong> +61 3 1234 5678</p>
-      <p><strong>Email:</strong> info@ecofuturesolutions.com</p>
-      <p><strong>Address:</strong> 123 Greenway Road, Melbourne, VIC, Australia</p>
+<body class="background-color">
+    <!-- Company Info -->
+    <section class="card company-info">
+      <h2>Company Info</h2>
+      <p><strong>EcoFuture Solutions</strong> - We help homes, businesses, and communities reduce carbon footprints and create long-term value.</p>
     </section>
 
-    <section class="contact-form-container">
-        <form class="contact-form">
-            <h2>Contact Us</h2>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <br><br>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <br><br>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <br><br>
-            <button type="submit">Send</button>
-        </form>
+    <!-- Contact Details -->
+    <section class="card contact-details">
+      <h2>Contact Details</h2>
+      <div class="details" aria-label="Contact methods">
+        <p><strong>Address:</strong> 123 Greenway Road, Melbourne, VIC, Australia</p>
+        <p><strong>Email:</strong> <a href="mailto:info@ecofuturesolutions.com">info@ecofuturesolutions.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+61312345678">+61 3 1234 5678</a></p>
+      </div>
+      <div class="note" style="margin-top:16px;">
+        If you have any questions or would like to learn more about our services, please don’t hesitate to contact us — we’d love to hear from you!
+      </div>
+    </section>
+
+    <!-- Contact Us Form -->
+    <section class="card contact-form-section">
+      <h2>Send a Message</h2>
+      <form id="contact-form" novalidate>
+        <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+        </div>
+        <div>
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" type="text" required />
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+          <p class="helper">We typically respond within 1–2 business days.</p>
+        </div>
+        <div class="actions">
+          <button type="submit">Submit</button>
+          <span id="form-status" role="status" aria-live="polite"></span>
+        </div>
+      </form>
     </section>
 </body>
+<br><br><br>
 
 <footer>
     <p class="footer-text">&copy; 2025 EcoFuture Solutions. All rights reserved.</p>
